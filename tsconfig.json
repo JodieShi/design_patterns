@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "target": "ES5",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "outFile": "patterns.js"
+  },
+  "files": [
+    "main.ts",
+    "singleton/singleton.ts"
+  ]
+}
