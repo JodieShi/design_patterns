@@ -8,6 +8,7 @@
   },
   "files": [
     "main.ts",
-    "singleton/singleton.ts"
+    "singleton/singleton.ts",
+    "singleton/demo.ts"
   ]
 }

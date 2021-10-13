@@ -16,4 +16,28 @@ namespace Patterns {
     console.log(menu);
   }
   
+
+  export function menu() : void {
+    var rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    printMenu();
+    rl.question('Which pattern would you like to check?   ', function(answer) {
+      switch (+answer) {
+        case 1:
+          show(SingletonPattern);
+          break;
+        default:
+          break;
+      }
+    })
+  }
+
+  function show(Pattern: any) : void {
+    Pattern.Demo.show();
+  }
 }
+
+Patterns.menu()
