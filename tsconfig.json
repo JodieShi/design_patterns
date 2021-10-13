@@ -9,6 +9,8 @@
   "files": [
     "main.ts",
     "singleton/singleton.ts",
-    "singleton/demo.ts"
+    "singleton/demo.ts",
+    "prototype/prototype.ts",
+    "prototype/demo.ts"
   ]
 }
