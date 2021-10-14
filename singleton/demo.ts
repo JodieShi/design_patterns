@@ -7,9 +7,9 @@ namespace SingletonPattern {
       const singleton2 = SingletonPattern.Singleton.getInstance();
   
       if (singleton1 === singleton2) {
-        console.log("two singletons are equivalent");
+        console.log("[Singleton] Two singletons are equivalent");
       } else {
-        console.log("two singletons are not equivalent");
+        console.log("[Singleton] Two singletons are not equivalent");
       }
     }
   }

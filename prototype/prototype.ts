@@ -10,7 +10,7 @@ namespace PrototypePattern {
     }
 
     toString() : string {
-      return "This is concrete1";
+      return "[Prototype] This is concrete1";
     }
   }
 
@@ -20,7 +20,7 @@ namespace PrototypePattern {
     }
 
     toString() : string {
-      return "This is concrete2";
+      return "[Prototype] This is concrete2";
     }
   }
 
@@ -30,7 +30,7 @@ namespace PrototypePattern {
     }
 
     toString() : string {
-      return "This is concrete3";
+      return "[Prototype] This is concrete3";
     }
   }
 

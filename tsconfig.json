@@ -11,6 +11,12 @@
     "singleton/singleton.ts",
     "singleton/demo.ts",
     "prototype/prototype.ts",
-    "prototype/demo.ts"
+    "prototype/demo.ts",
+    "simple_factory/simple_factory.ts",
+    "simple_factory/demo.ts",
+    "factory_method/factory_method.ts",
+    "factory_method/demo.ts",
+    "abstract_factory/abstract_factory.ts",
+    "abstract_factory/demo.ts"
   ]
 }
