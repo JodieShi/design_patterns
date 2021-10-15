@@ -239,11 +239,70 @@ var AbstractFactoryPattern;
     }());
     AbstractFactoryPattern.ConcreteFactory2 = ConcreteFactory2;
 })(AbstractFactoryPattern || (AbstractFactoryPattern = {}));
+var BuilderPattern;
+(function (BuilderPattern) {
+    var Product = /** @class */ (function () {
+        function Product() {
+        }
+        Product.prototype.setPartA = function (partA) {
+            this.partA = partA;
+        };
+        Product.prototype.setPartB = function (partB) {
+            this.partB = partB;
+        };
+        Product.prototype.setPartC = function (partC) {
+            this.partC = partC;
+        };
+        Product.prototype.show = function (params) {
+            console.log("[Builder Pattern] Product info: " + this.partA + ", " + this.partB + ", " + this.partC + ".");
+        };
+        return Product;
+    }());
+    BuilderPattern.Product = Product;
+    var ConcreteBuilder = /** @class */ (function () {
+        function ConcreteBuilder() {
+            this.reset();
+        }
+        ConcreteBuilder.prototype.reset = function () {
+            this.product = new Product();
+        };
+        ConcreteBuilder.prototype.buildPartA = function () {
+            this.product.setPartA("partA");
+        };
+        ConcreteBuilder.prototype.buildPartB = function () {
+            this.product.setPartB("partB");
+        };
+        ConcreteBuilder.prototype.buildPartC = function () {
+            this.product.setPartC("partC");
+        };
+        ConcreteBuilder.prototype.getProduct = function () {
+            var p = this.product;
+            this.reset();
+            return p;
+        };
+        return ConcreteBuilder;
+    }());
+    BuilderPattern.ConcreteBuilder = ConcreteBuilder;
+    var Director = /** @class */ (function () {
+        function Director(builder) {
+            this.builder = builder;
+        }
+        Director.prototype.buildProduct = function () {
+            this.builder.buildPartA();
+            this.builder.buildPartB();
+            this.builder.buildPartC();
+            return this.builder.getProduct();
+        };
+        return Director;
+    }());
+    BuilderPattern.Director = Director;
+})(BuilderPattern || (BuilderPattern = {}));
 /// <reference path="./singleton/demo.ts" />
 /// <reference path="./prototype/demo.ts" />
 /// <reference path="./factory_method/factory_method.ts" />
 /// <reference path="./simple_factory/simple_factory.ts" />
 /// <reference path="./abstract_factory/abstract_factory.ts" />
+/// <reference path="./builder/builder.ts" />
 var readline = require('readline');
 var Patterns;
 (function (Patterns) {
@@ -253,7 +312,8 @@ var Patterns;
             "  2: Prototype \n" +
             "  3.1: Simple factory\n" +
             "  3.2: Factory method\n" +
-            "  4: Abstract factory";
+            "  4: Abstract factory\n" +
+            "  5: Builder\n";
         console.log("\n\n");
         console.log("==== Choose one pattern to demonstrate ====");
         console.log("\n");
@@ -281,6 +341,9 @@ var Patterns;
                     break;
                 case 4:
                     show(AbstractFactoryPattern);
+                    break;
+                case 5:
+                    show(BuilderPattern);
                     break;
                 default:
                     break;
@@ -347,3 +410,18 @@ var AbstractFactoryPattern;
         Demo.show = show;
     })(Demo = AbstractFactoryPattern.Demo || (AbstractFactoryPattern.Demo = {}));
 })(AbstractFactoryPattern || (AbstractFactoryPattern = {}));
+/// <reference path="./builder.ts" />
+var BuilderPattern;
+/// <reference path="./builder.ts" />
+(function (BuilderPattern) {
+    var Demo;
+    (function (Demo) {
+        function show() {
+            var builder = new BuilderPattern.ConcreteBuilder();
+            var director = new BuilderPattern.Director(builder);
+            var product = director.buildProduct();
+            product.show();
+        }
+        Demo.show = show;
+    })(Demo = BuilderPattern.Demo || (BuilderPattern.Demo = {}));
+})(BuilderPattern || (BuilderPattern = {}));

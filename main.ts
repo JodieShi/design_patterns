@@ -3,6 +3,7 @@
 /// <reference path="./factory_method/factory_method.ts" />
 /// <reference path="./simple_factory/simple_factory.ts" />
 /// <reference path="./abstract_factory/abstract_factory.ts" />
+/// <reference path="./builder/builder.ts" />
 
 declare var require : (moduleId : string) => any;
 declare var process : any;
@@ -16,7 +17,8 @@ namespace Patterns {
                 "  2: Prototype \n" +
                 "  3.1: Simple factory\n" +
                 "  3.2: Factory method\n" +
-                "  4: Abstract factory";
+                "  4: Abstract factory\n" +
+                "  5: Builder\n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
@@ -48,6 +50,9 @@ namespace Patterns {
           break;
         case 4:
           show(AbstractFactoryPattern);
+          break;
+        case 5:
+          show(BuilderPattern);
           break;
         default:
           break;

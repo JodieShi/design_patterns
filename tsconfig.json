@@ -17,6 +17,8 @@
     "factory_method/factory_method.ts",
     "factory_method/demo.ts",
     "abstract_factory/abstract_factory.ts",
-    "abstract_factory/demo.ts"
+    "abstract_factory/demo.ts",
+    "builder/builder.ts",
+    "builder/demo.ts"
   ]
 }
