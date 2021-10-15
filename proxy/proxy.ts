@@ -13,7 +13,7 @@ namespace ProxyPattern {
     private realSubject: RealSubject;
 
     constructor() {
-      this.realSubject = new RealSubject()
+      // this.realSubject = new RealSubject()
     }
 
     private preRequest() : void {
@@ -25,6 +25,9 @@ namespace ProxyPattern {
     }
 
     public Request() : void {
+      if (this.realSubject === null || this.realSubject === undefined) {
+        this.realSubject = new RealSubject()
+      }
       this.preRequest()
       this.realSubject.Request()
       this.postRequest()
