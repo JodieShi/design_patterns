@@ -21,6 +21,8 @@
     "builder/builder.ts",
     "builder/demo.ts",
     "proxy/proxy.ts",
-    "proxy/demo.ts"
+    "proxy/demo.ts",
+    "adapter/adapter.ts",
+    "adapter/demo.ts"
   ]
 }

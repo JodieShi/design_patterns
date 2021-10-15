@@ -9,4 +9,8 @@ design patterns
 - builder
 
 ## structural patterns
+- proxy
+- adapter
+- bridge
+
 ## behavior patterns

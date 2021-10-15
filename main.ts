@@ -1,10 +1,12 @@
 /// <reference path="./singleton/demo.ts" />
 /// <reference path="./prototype/demo.ts" />
-/// <reference path="./factory_method/factory_method.ts" />
-/// <reference path="./simple_factory/simple_factory.ts" />
-/// <reference path="./abstract_factory/abstract_factory.ts" />
-/// <reference path="./builder/builder.ts" />
-/// <reference path="./proxy/proxy.ts" />
+/// <reference path="./factory_method/demo.ts" />
+/// <reference path="./simple_factory/demo.ts" />
+/// <reference path="./abstract_factory/demo.ts" />
+/// <reference path="./builder/demo.ts" />
+/// <reference path="./proxy/demo.ts" />
+/// <reference path="./adapter/demo.ts" />
+
 
 declare var require : (moduleId : string) => any;
 declare var process : any;
@@ -21,7 +23,9 @@ namespace Patterns {
                 "  4: Abstract factory\n" +
                 "  5: Builder\n" +
                 "== Structural Patterns == \n" +
-                "  6: Proxy\n";
+                "  6: Proxy\n" +
+                "  7.1 Class adapter\n" +
+                "  7.2 Object adapter\n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
@@ -59,6 +63,12 @@ namespace Patterns {
           break;
         case 6:
           show(ProxyPattern);
+          break;
+        case 7.1:
+          show(ClassAdapterPattern);
+          break;
+        case 7.2:
+          show(ObjectAdapterPattern);
           break;
         default:
           break;
