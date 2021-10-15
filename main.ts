@@ -4,6 +4,7 @@
 /// <reference path="./simple_factory/simple_factory.ts" />
 /// <reference path="./abstract_factory/abstract_factory.ts" />
 /// <reference path="./builder/builder.ts" />
+/// <reference path="./proxy/proxy.ts" />
 
 declare var require : (moduleId : string) => any;
 declare var process : any;
@@ -12,13 +13,15 @@ var readline = require('readline');
 
 namespace Patterns {
   function printMenu() : void {
-    var menu =	"= Creational Patterns == \n" +
+    var menu =	"== Creational Patterns == \n" +
                 "  1: Singleton \n" +
                 "  2: Prototype \n" +
                 "  3.1: Simple factory\n" +
                 "  3.2: Factory method\n" +
                 "  4: Abstract factory\n" +
-                "  5: Builder\n";
+                "  5: Builder\n" +
+                "== Structural Patterns == \n" +
+                "  6: Proxy\n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
@@ -53,6 +56,9 @@ namespace Patterns {
           break;
         case 5:
           show(BuilderPattern);
+          break;
+        case 6:
+          show(ProxyPattern);
           break;
         default:
           break;

@@ -19,6 +19,8 @@
     "abstract_factory/abstract_factory.ts",
     "abstract_factory/demo.ts",
     "builder/builder.ts",
-    "builder/demo.ts"
+    "builder/demo.ts",
+    "proxy/proxy.ts",
+    "proxy/demo.ts"
   ]
 }
