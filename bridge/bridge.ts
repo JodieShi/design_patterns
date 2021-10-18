@@ -19,7 +19,7 @@ namespace BridgePattern {
   abstract class Abstraction {
     protected imple: Implementor;
 
-    constructor(imple) {
+    constructor(imple: Implementor) {
       this.imple = imple;
     }
 
@@ -27,7 +27,7 @@ namespace BridgePattern {
   }
 
   export class RefinedAbstraction extends Abstraction {
-    constructor(imple) {
+    constructor(imple: Implementor) {
       super(imple);
     }
 

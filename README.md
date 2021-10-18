@@ -12,5 +12,6 @@ design patterns
 - proxy
 - adapter
 - bridge
+- decorator
 
 ## behavior patterns

@@ -23,6 +23,10 @@
     "proxy/proxy.ts",
     "proxy/demo.ts",
     "adapter/adapter.ts",
-    "adapter/demo.ts"
+    "adapter/demo.ts",
+    "bridge/bridge.ts",
+    "bridge/demo.ts",
+    "decorator/decorator.ts",
+    "decorator/demo.ts"
   ]
 }
