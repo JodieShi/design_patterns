@@ -6,6 +6,7 @@
 /// <reference path="./builder/demo.ts" />
 /// <reference path="./proxy/demo.ts" />
 /// <reference path="./adapter/demo.ts" />
+/// <reference path="./bridge/demo.ts" />
 
 
 declare var require : (moduleId : string) => any;
@@ -24,8 +25,9 @@ namespace Patterns {
                 "  5: Builder\n" +
                 "== Structural Patterns == \n" +
                 "  6: Proxy\n" +
-                "  7.1 Class adapter\n" +
-                "  7.2 Object adapter\n";
+                "  7.1: Class adapter\n" +
+                "  7.2: Object adapter\n" +
+                "  8: Bridge\n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
@@ -69,6 +71,9 @@ namespace Patterns {
           break;
         case 7.2:
           show(ObjectAdapterPattern);
+          break;
+        case 8:
+          show(BridgePattern);
           break;
         default:
           break;
