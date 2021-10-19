@@ -15,5 +15,6 @@ design patterns
 - decorator
 - facade
 - flyweight
+- composite
 
 ## behavior patterns

@@ -10,6 +10,7 @@
 /// <reference path="./decorator/demo.ts" />
 /// <reference path="./facade/demo.ts" />
 /// <reference path="./flyweight/demo.ts" />
+/// <reference path="./composite/demo.ts" />
 
 
 declare var require : (moduleId : string) => any;
@@ -33,7 +34,8 @@ namespace Patterns {
                 "  8: Bridge\n" +
                 "  9: Decorator\n" +
                 "  10: Facade\n" +
-                "  11: Flyweight\n";
+                "  11: Flyweight\n" +
+                "  12: Composite\n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
@@ -89,6 +91,9 @@ namespace Patterns {
           break;
         case 11:
           show(FlyweightPattern);
+          break;
+        case 12:
+          show(CompositePattern);
           break;
         default:
           break;

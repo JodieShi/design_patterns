@@ -31,6 +31,8 @@
     "facade/facade.ts",
     "facade/demo.ts",
     "flyweight/flyweight.ts",
-    "flyweight/demo.ts"
+    "flyweight/demo.ts",
+    "composite/composite.ts",
+    "composite/demo.ts"
   ]
 }
