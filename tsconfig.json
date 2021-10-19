@@ -29,6 +29,8 @@
     "decorator/decorator.ts",
     "decorator/demo.ts",
     "facade/facade.ts",
-    "facade/demo.ts"
+    "facade/demo.ts",
+    "flyweight/flyweight.ts",
+    "flyweight/demo.ts"
   ]
 }

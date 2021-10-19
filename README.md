@@ -13,5 +13,7 @@ design patterns
 - adapter
 - bridge
 - decorator
+- facade
+- flyweight
 
 ## behavior patterns
