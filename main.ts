@@ -8,6 +8,7 @@
 /// <reference path="./adapter/demo.ts" />
 /// <reference path="./bridge/demo.ts" />
 /// <reference path="./decorator/demo.ts" />
+/// <reference path="./facade/demo.ts" />
 
 
 declare var require : (moduleId : string) => any;
@@ -29,7 +30,8 @@ namespace Patterns {
                 "  7.1: Class adapter\n" +
                 "  7.2: Object adapter\n" +
                 "  8: Bridge\n" +
-                "  9: Decorator\n";
+                "  9: Decorator\n" +
+                "  10: Facade\n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
@@ -79,6 +81,9 @@ namespace Patterns {
           break;
         case 9:
           show(DecoratorPattern);
+          break;
+        case 10:
+          show(FacadePattern);
           break;
         default:
           break;

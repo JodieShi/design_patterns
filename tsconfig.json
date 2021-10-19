@@ -27,6 +27,8 @@
     "bridge/bridge.ts",
     "bridge/demo.ts",
     "decorator/decorator.ts",
-    "decorator/demo.ts"
+    "decorator/demo.ts",
+    "facade/facade.ts",
+    "facade/demo.ts"
   ]
 }
