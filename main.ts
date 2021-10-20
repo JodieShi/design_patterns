@@ -13,7 +13,7 @@
 /// <reference path="./composite/demo.ts" />
 /// <reference path="./template_method/demo.ts" />
 /// <reference path="./strategy/demo.ts" />
-
+/// <reference path="./command/demo.ts" />
 
 declare var require : (moduleId : string) => any;
 declare var process : any;
@@ -40,7 +40,8 @@ namespace Patterns {
                 "  12: Composite\n" +
                 "== Behavior Patterns == \n" +
                 "  13: Template Method\n" +
-                "  14: Strategy\n";
+                "  14: Strategy\n" +
+                "  15: Command\n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
@@ -105,6 +106,9 @@ namespace Patterns {
           break;
         case 14:
           show(StrategyPattern);
+          break;
+        case 15:
+          show(CommandPattern);
           break;
         default:
           break;

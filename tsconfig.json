@@ -37,6 +37,8 @@
     "template_method/template_method.ts",
     "template_method/demo.ts",
     "strategy/strategy.ts",
-    "strategy/demo.ts"
+    "strategy/demo.ts",
+    "command/command.ts",
+    "command/demo.ts"
   ]
 }
