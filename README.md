@@ -21,3 +21,4 @@ design patterns
 - template method
 - strategy
 - command
+- responsibility chain

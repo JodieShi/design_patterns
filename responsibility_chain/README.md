@@ -1,0 +1,1 @@
+## responsibility chain pattern

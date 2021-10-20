@@ -14,6 +14,7 @@
 /// <reference path="./template_method/demo.ts" />
 /// <reference path="./strategy/demo.ts" />
 /// <reference path="./command/demo.ts" />
+/// <reference path="./responsibility_chain/demo.ts" />
 
 declare var require : (moduleId : string) => any;
 declare var process : any;
@@ -41,7 +42,8 @@ namespace Patterns {
                 "== Behavior Patterns == \n" +
                 "  13: Template Method\n" +
                 "  14: Strategy\n" +
-                "  15: Command\n";
+                "  15: Command\n" +
+                "  16: Responsibility chain\n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
@@ -109,6 +111,9 @@ namespace Patterns {
           break;
         case 15:
           show(CommandPattern);
+          break;
+        case 16:
+          show(ResponsibilityChainPattern);
           break;
         default:
           break;

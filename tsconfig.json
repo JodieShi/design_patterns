@@ -39,6 +39,8 @@
     "strategy/strategy.ts",
     "strategy/demo.ts",
     "command/command.ts",
-    "command/demo.ts"
+    "command/demo.ts",
+    "responsibility_chain/responsibility_chain.ts",
+    "responsibility_chain/demo.ts",
   ]
 }
