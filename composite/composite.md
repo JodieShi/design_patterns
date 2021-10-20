@@ -7,3 +7,6 @@
 - 抽象构件（Component）
 - 树叶构件（Leaf）：叶节点
 - 树枝构件/中间构件（Composite）：分支节点
+
+## 扩展
+复杂的组合模式：对叶节点和分支节点进行抽象，它们可以有子节点（SubLeaf，SubComposite）。

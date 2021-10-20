@@ -17,4 +17,7 @@ design patterns
 - flyweight
 - composite
 
-## behavior patterns
+## behavior patterns 
+- template method
+- strategy
+- command
