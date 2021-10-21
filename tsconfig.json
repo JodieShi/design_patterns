@@ -45,6 +45,8 @@
     "state/state.ts",
     "state/demo.ts",
     "observer/observer.ts",
-    "observer/demo.ts"
+    "observer/demo.ts",
+    "mediator/mediator.ts",
+    "mediator/demo.ts"
   ]
 }

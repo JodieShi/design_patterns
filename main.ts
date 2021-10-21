@@ -17,6 +17,7 @@
 /// <reference path="./responsibility_chain/demo.ts" />
 /// <reference path="./state/demo.ts" />
 /// <reference path="./observer/demo.ts" />
+/// <reference path="./mediator/demo.ts" />
 
 declare var require : (moduleId : string) => any;
 declare var process : any;
@@ -47,7 +48,8 @@ namespace Patterns {
                 "  15: Command\n" +
                 "  16: Responsibility chain\n" +
                 "  17: State\n" +
-                "  18: Observer\n";
+                "  18: Observer\n" +
+                "  19: Mediator\n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
@@ -124,6 +126,9 @@ namespace Patterns {
           break;
         case 18:
           show(ObserverPattern);
+          break;
+        case 19:
+          show(MediatorPattern);
           break;
         default:
           break;

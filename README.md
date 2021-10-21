@@ -24,3 +24,4 @@ design patterns
 - responsibility chain
 - state
 - observer
+- mediator
