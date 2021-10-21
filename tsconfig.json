@@ -42,5 +42,7 @@
     "command/demo.ts",
     "responsibility_chain/responsibility_chain.ts",
     "responsibility_chain/demo.ts",
+    "state/state.ts",
+    "state/demo.ts"
   ]
 }

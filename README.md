@@ -22,3 +22,5 @@ design patterns
 - strategy
 - command
 - responsibility chain
+- state
+- observer
