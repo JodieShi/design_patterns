@@ -43,6 +43,8 @@
     "responsibility_chain/responsibility_chain.ts",
     "responsibility_chain/demo.ts",
     "state/state.ts",
-    "state/demo.ts"
+    "state/demo.ts",
+    "observer/observer.ts",
+    "observer/demo.ts"
   ]
 }

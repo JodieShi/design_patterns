@@ -16,6 +16,7 @@
 /// <reference path="./command/demo.ts" />
 /// <reference path="./responsibility_chain/demo.ts" />
 /// <reference path="./state/demo.ts" />
+/// <reference path="./observer/demo.ts" />
 
 declare var require : (moduleId : string) => any;
 declare var process : any;
@@ -45,7 +46,8 @@ namespace Patterns {
                 "  14: Strategy\n" +
                 "  15: Command\n" +
                 "  16: Responsibility chain\n" +
-                "  17: State\n";
+                "  17: State\n" +
+                "  18: Observer\n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
@@ -119,6 +121,9 @@ namespace Patterns {
           break;
         case 17:
           show(StatePattern);
+          break;
+        case 18:
+          show(ObserverPattern);
           break;
         default:
           break;
