@@ -51,6 +51,8 @@
     "iterator/iterator.ts",
     "iterator/demo.ts",
     "visitor/visitor.ts",
-    "visitor/demo.ts"
+    "visitor/demo.ts",
+    "memento/memento.ts",
+    "memento/demo.ts"
   ]
 }
