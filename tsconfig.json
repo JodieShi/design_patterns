@@ -53,6 +53,8 @@
     "visitor/visitor.ts",
     "visitor/demo.ts",
     "memento/memento.ts",
-    "memento/demo.ts"
+    "memento/demo.ts",
+    "interpreter/interpreter.ts",
+    "interpreter/demo.ts"
   ]
 }
