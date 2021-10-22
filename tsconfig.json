@@ -47,6 +47,8 @@
     "observer/observer.ts",
     "observer/demo.ts",
     "mediator/mediator.ts",
-    "mediator/demo.ts"
+    "mediator/demo.ts",
+    "iterator/iterator.ts",
+    "iterator/demo.ts"
   ]
 }

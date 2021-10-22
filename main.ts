@@ -18,6 +18,7 @@
 /// <reference path="./state/demo.ts" />
 /// <reference path="./observer/demo.ts" />
 /// <reference path="./mediator/demo.ts" />
+/// <reference path="./iterator/demo.ts" />
 
 declare var require : (moduleId : string) => any;
 declare var process : any;
@@ -49,7 +50,8 @@ namespace Patterns {
                 "  16: Responsibility chain\n" +
                 "  17: State\n" +
                 "  18: Observer\n" +
-                "  19: Mediator\n";
+                "  19: Mediator\n" +
+                "  20: Iterator\n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
@@ -65,7 +67,7 @@ namespace Patterns {
     });
 
     printMenu();
-    rl.question('Which pattern would you like to check?   ', function(answer) {
+    rl.question('Which pattern would you like to check?   ', function(answer: string) {
       switch (+answer) {
         case 1:
           show(SingletonPattern);
@@ -129,6 +131,9 @@ namespace Patterns {
           break;
         case 19:
           show(MediatorPattern);
+          break;
+        case 20:
+          show(IteratorPattern);
           break;
         default:
           break;

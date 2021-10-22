@@ -25,3 +25,7 @@ design patterns
 - state
 - observer
 - mediator
+- iterator
+- visitor
+- memento
+- interpreter
