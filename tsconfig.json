@@ -49,6 +49,8 @@
     "mediator/mediator.ts",
     "mediator/demo.ts",
     "iterator/iterator.ts",
-    "iterator/demo.ts"
+    "iterator/demo.ts",
+    "visitor/visitor.ts",
+    "visitor/demo.ts"
   ]
 }

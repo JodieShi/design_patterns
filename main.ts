@@ -19,6 +19,7 @@
 /// <reference path="./observer/demo.ts" />
 /// <reference path="./mediator/demo.ts" />
 /// <reference path="./iterator/demo.ts" />
+/// <reference path="./visitor/demo.ts" />
 
 declare var require : (moduleId : string) => any;
 declare var process : any;
@@ -51,7 +52,8 @@ namespace Patterns {
                 "  17: State\n" +
                 "  18: Observer\n" +
                 "  19: Mediator\n" +
-                "  20: Iterator\n";
+                "  20: Iterator\n" +
+                "  21: Visitor\n";
 
     console.log("\n\n");
     console.log("==== Choose one pattern to demonstrate ====");
@@ -134,6 +136,9 @@ namespace Patterns {
           break;
         case 20:
           show(IteratorPattern);
+          break;
+        case 21:
+          show(VisitorPattern);
           break;
         default:
           break;
